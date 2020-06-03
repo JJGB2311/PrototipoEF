@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6643646A-92CA-4D7C-886E-7BF43E243F06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_0901_16_47_Juan_Jose_Gamez_Blanco_Final</RootNamespace>
+    <AssemblyName>0901-16-47 Juan Jose Gamez Blanco Final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaDeDiseno">
+      <HintPath>..\..\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDiseno">
+      <HintPath>..\..\Seguridad\CapaDiseno\bin\Debug\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaModelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaVista, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CapaVista.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodega.Designer.cs">
+      <DependentUpon>Bodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Existencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Existencia.Designer.cs">
+      <DependentUpon>Existencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="linea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="linea.Designer.cs">
+      <DependentUpon>linea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca.Designer.cs">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIMENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIMENU.Designer.cs">
+      <DependentUpon>MDIMENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto.Designer.cs">
+      <DependentUpon>Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte Clientes.Designer.cs">
+      <DependentUpon>Reporte Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporteexistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporteexistencia.Designer.cs">
+      <DependentUpon>Reporteexistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporteproductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporteproductos.Designer.cs">
+      <DependentUpon>Reporteproductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_productos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte_productos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REP_Client.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REP_Client.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Saldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Saldos.Designer.cs">
+      <DependentUpon>Saldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendedores.Designer.cs">
+      <DependentUpon>vendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bodega.resx">
+      <DependentUpon>Bodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Existencia.resx">
+      <DependentUpon>Existencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="linea.resx">
+      <DependentUpon>linea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIMENU.resx">
+      <DependentUpon>MDIMENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto.resx">
+      <DependentUpon>Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte Clientes.resx">
+      <DependentUpon>Reporte Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporteexistencia.resx">
+      <DependentUpon>Reporteexistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporteproductos.resx">
+      <DependentUpon>Reporteproductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_productos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte_productos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP_Client.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REP_Client.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendedores.resx">
+      <DependentUpon>vendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
