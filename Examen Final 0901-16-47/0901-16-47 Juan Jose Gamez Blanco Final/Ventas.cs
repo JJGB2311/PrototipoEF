@@ -111,7 +111,7 @@ namespace _0901_16_47_Juan_Jose_Gamez_Blanco_Final
             try
             {
                 consulta.ExecuteNonQuery();
-                MessageBox.Show("El Empleado se Registro Corectamente");
+                MessageBox.Show("Se Registro Corectamente");
                 llenartbl();
             }
             catch (Exception ex)
